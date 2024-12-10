@@ -17,8 +17,17 @@
         <div class="container">
             <!-- Check if the user is authenticated -->
             {% if user.is_authenticated %}
+            <a href="{% url 'post_draft_list' %}" class="top-menu">
+                {% include './icons/pencil-square.svg' %}
+            </a>
             <a href="{% url 'post_new' %}" class="top-menu">
                 {% include './icons/file-earmark-plus.svg' %}
+            </a>
+            <a href="{% url 'logout' %}" class="top-menu">
+                {% include './icons/door-open-fill.svg' %}
+            {% else %}
+            <a href="{% url 'login' %}" class="top-menu">
+                {% include './icons/door-open.svg' %}
             </a>
             {% endif %}
             <!-- Main Blog Title -->

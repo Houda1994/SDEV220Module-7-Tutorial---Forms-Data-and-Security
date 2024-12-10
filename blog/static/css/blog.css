@@ -38,8 +38,10 @@ h4 {
 }
 
 .post> .date,
-.post> .actions {
+.post> .actions,
+.post> .actions > .myforms {
     float: right;
+    margin-right: 10px;
 }
 
 .top-menu,
@@ -71,4 +73,12 @@ h4 {
 .btn-secondary:hover{
     color: #ffffff;
     background-color: #C25100;
+    margin-left: 15px;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+.comment-text {
+    color: blue;
 }
